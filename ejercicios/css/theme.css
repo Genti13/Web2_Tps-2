@@ -1,0 +1,31 @@
+body {
+    background: url(/resources/images/bg.jpg);
+    min-height: 100%;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-dir-col {
+    flex-direction: column;
+}
+
+.border-10 {
+    border-radius: 10px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+input.noArrow[type="number"]::-webkit-outer-spin-button,
+input.noArrow[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+    margin: 0;
+}
+
+input.noArrow[type="number"] {
+    -moz-appearance: textfield;
+}

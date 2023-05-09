@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12 - Tabla</title>
+
+    <?php include_once('../html/imports_css.html') ?>
+    <!-- Local CSS -->
+
+</head>
+
+<body>
+
+    <?php include_once('../html/nav.html');?>
+
+    <main class="flex-center w-50 mx-auto flex-dir-col">
+
+        <table class="table table-light">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Planeta</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <?php include_once('cargar_tabla_aduana.php');?>
+            </tbody>
+        </table>
+
+
+        <!-- <?php echo count($data);?> -->
+
+    </main>
+
+    <?php include_once('../html/footer.html');?>
+    <?php include_once('../html/imports_js.html'); ?>
+
+</body>
+
+</html>

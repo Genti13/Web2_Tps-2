@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+
+    <?php include_once('../html/imports_css.html') ?>
+    <!-- Local CSS -->
+
+</head>
+
+<body>
+
+    <?php include_once('../html/nav.html');?>
+
+    <main class="flex-center">
+        <form action="ej_12_cargar.php" method="post" enctype="multipart/form-data" class="row flex-center gap-10 py-2 form-control w-50">
+
+            <div class="form-floating mb-1">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Nombre" name="nombre" required>
+                <label for="floatingInput" class="ms-3">Nombre</label>
+              </div>
+
+             <select name="planeta" id="select-planetas" class="form-select form-select-lg mx-2" aria-label=".form-select-lg example">
+                <option value="tierra">Tierra</option>
+                <option value="marte">Marte</option>
+                <option value="jupiter">Jupiter</option>
+                <option value="pluton">Pluton</option>
+            </select>
+
+             <input type="submit" value="Subir" class="col-2 btn btn-primary ">
+
+        </form>
+    </main>
+
+    <?php include_once('../html/footer.html');?>
+    <?php include_once('../html/imports_js.html'); ?>
+
+</body>
+
+</html>

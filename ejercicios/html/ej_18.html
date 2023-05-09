@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18</title>
+
+    <?php include_once('../html/imports_css.html') ?>
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="/css/ej_14.css">
+
+</head>
+
+<body>
+
+    <?php include_once('../html/nav.html');?>
+
+    <main class="flex-center flex-dir-col mx-auto">
+        <h2 class="mx-auto">PacMan</h2>
+
+        <div class="mt-3 mx-auto">
+            <h3>1- PacMan come Pildora:</h3>
+            <?php $pacman->chocarContra($pildora); ?>
+            <h3 class="text-center">Puntos:
+                <?php echo $partida->mostrarPuntos(); ?>
+            </h3>
+            <h3 class="text-center">Vidas:
+                <?php echo $partida->mostrarVidas(); ?>
+            </h3>
+        </div>
+
+        <div class="mt-3 mx-auto">
+            <h3>2- PacMan come Fantasma:</h3>
+            <?php $pacman->chocarContra($fantasmaComestible); ?>
+            <h3 class="text-center">Puntos:
+                <?php echo $partida->mostrarPuntos(); ?>
+            </h3>
+            <h3 class="text-center">Vidas:
+                <?php echo $partida->mostrarVidas(); ?>
+            </h3>
+        </div>
+
+        <div class="mt-3 mx-auto">
+            <h3>3- PacMan choca con Fantasma:</h3>
+            <?php $pacman->chocarContra($fantasma); ?>
+            <h3 class="text-center">Puntos:
+                <?php echo $partida->mostrarPuntos(); ?>
+            </h3>
+            <h3 class="text-center">Vidas:
+                <?php echo $partida->mostrarVidas(); ?>
+            </h3>
+        </div>
+
+        <div class="mt-3 mx-auto">
+            <h3>4- PacMan choca con Fantasmas y se queda sin vidas:</h3>
+            <?php $pacman->chocarContra($fantasma); ?>
+            <?php $pacman->chocarContra($fantasma); ?>
+            <h3 class="text-center">Puntos:
+                <?php echo $partida->mostrarPuntos(); ?>
+            </h3>
+            <h3 class="text-center">Vidas:
+                <?php echo $partida->mostrarVidas(); ?>
+            </h3>
+
+            <h3 class="text-center"><?php $pacman->chocarContra($fantasma); ?></h3>
+        </div>
+
+    </main>
+
+    <?php include_once('../html/footer.html');?>
+    <?php include_once('../html/imports_js.html'); ?>
+
+</body>
+
+</html>

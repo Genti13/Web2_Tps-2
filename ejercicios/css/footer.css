@@ -1,0 +1,8 @@
+footer{
+    background-color: #292929;
+    flex-shrink: 0;
+}
+
+footer h4{
+    margin-bottom: 0rem;
+}

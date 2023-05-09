@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+
+    <?php include_once('../html/imports_css.html') ?>
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="/css/ej_14.css">
+
+</head>
+
+<body>
+
+    <?php include_once('../html/nav.html');?>
+
+    <main class="flex-center flex-dir-col mx-auto">
+        <h2 class="mx-auto">Calcula Doris</h2>
+
+        <div class="mt-3 mx-auto">
+            <h3>Primer Operacion:</h3>
+            <h4 class="text-center">5 - 3 + 3 + 4</h4>
+            <h3 class="text-center">Resultado:
+                <?php echo $resultado_1 ?>
+            </h3>
+        </div>
+
+        <div class="mt-3 mx-auto">
+            <h3>Segunda Operacion:</h3>
+            <h4 class="text-center">(5 - 3 + 3 + 4) * 2</h4>
+            <h3 class="text-center">Resultado:
+                <?php echo $resultado_2?>
+            </h3>
+        </div>
+    </main>
+
+    <?php include_once('../html/footer.html');?>
+    <?php include_once('../html/imports_js.html'); ?>
+
+</body>
+
+</html>
