@@ -1,0 +1,19 @@
+.images-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    background-color: rgba(151, 151, 151, 0.425);
+    border-radius: 25px;
+}
+
+.ej_9_image{
+    width: calc((80% / 3) - 12px);
+    height: 10rem;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.ej_9_image:hover{
+    transform: scale(1.2);
+}
