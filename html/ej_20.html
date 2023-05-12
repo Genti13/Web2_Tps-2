@@ -1,4 +1,3 @@
-!
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,18 +17,16 @@
 
     <?php include_once('../html/nav.html');?>
 
-    <main class="flex-center flex-dir-col m-auto">
+    <main class="flex-center">
 
-        <div class="flex-center flex-dir-col m-auto">
+        <main class="flex-center flex-dir-col mx-auto">
 
-            <h3>Su menu:</h3>
-
-            <?php include_once('ej_14_imprimirMenu.php');?>
-
-
-        </div>
-
-
+            <h1>Los resultados de la partida son: </h1>
+            <h3 class="m-auto"><?php echo $partida->score()?></h3>
+            
+    
+        </main>
+    
 
     </main>
 
